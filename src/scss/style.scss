@@ -1,0 +1,70 @@
+// If you want to override variables do it here
+@import "variables";
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import CoreUI for React components library
+@import "@coreui/coreui/scss/coreui";
+
+// Import Chart.js custom tooltips styles
+@import "@coreui/chartjs/scss/coreui-chartjs";
+
+@import "layout";
+@import "example";
+
+// If you want to add custom CSS you can put it here.
+@import "custom";
+
+.simplebar-content li:first-child .nav-link path {
+    fill: var(--cui-sidebar-nav-link-color);
+}
+
+
+.simplebar-content li:first-child .nav-link.active path {
+    fill: var(--cui-sidebar-nav-link-active-color);
+}
+
+
+.sidebar-nav .nav-link.active path {
+    stroke: var(--cui-sidebar-nav-link-active-color);
+}
+
+.sidebar-nav .nav-link svg {
+    // stroke: var(--cui-sidebar-nav-link-active-color);
+    stroke: var(--cui-sidebar-nav-link-color);
+}
+
+.sidebar-nav .nav-link.active svg {
+    stroke: var(--cui-sidebar-nav-link-active-color);
+}
+
+.sidebar-nav .nav-link.active .navbar-icon-arrow {
+    display: block;
+}
+
+.sidebar-nav .nav-link .navbar-icon-arrow {
+    display: none;
+}
+
+.body {
+    font-style: normal;
+}
+
+// @media (min-width: 360px) {
+//     .header-search {
+//         min-width: '230px';
+//         max-width: '230px';
+//     }
+// }
+.header-search {
+    width: '260px';
+}
+.chartjs-tooltip {
+    width: 70px;
+}
+// @media (min-width: 900px) {
+//     .ps-1 {
+//         display: none;
+//     }
+// }
